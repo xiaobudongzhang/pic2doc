@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PicforDoc</title>
+  {=css_web("vendor")}
+  {=css_web("index")}
+</head>
+<body>
+ {loop $list $val}
+<div class="col-md-4 col-sm-6 item">
+<div class="thumbnail">
+
+<a href="/v/point/index?map_page_sub_id={$val['id']}">
+	<img src="{$val['pic']}" alt="">
+</a>
+
+<div class="caption">
+	 <!-- <a href="/point/point/index">浏览</a><hr> --><a href="/v/point/index?map_page_sub_id={$val['id']}&modeStatus=1">修改</a>
+<!-- <h3>Thumbnail label</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+</div>
+</div>
+</div><!--/.item -->
+{/loop}
+
+</div>
+</div>
+</div>
+</body>
+</html>

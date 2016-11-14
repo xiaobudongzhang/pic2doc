@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PicforDoc</title>
+  {=css_web("vendor")}
+  {=css_web("index")}
+</head>
+<body>
+  <div class="target-bg">
+    <img class="target-click" src="{$row['pic']}" alt="">
+  </div>
+
+  {template include/popContentLayer}
+<script type="text/javascript" >
+  var map_page_sub_id = '{$map_page_sub_id}';
+  var modeStatus='{$modeStatus}';
+</script>
+  {=js_web("vendor")}
+  {=js_web("index")}
+</body>
+</html>

@@ -1,0 +1,72 @@
+h1 概述
+p 为了提供快速灵活的web系统，新房产品后端采用PHP框架基于 Codeigniter 3.0，详细文档可见http://codeigniter.org.cn/user_guide/index.html
+p 框架内部扩展了可用的相关开发模块，以下仅为该框架扩展部分进行文档描述。
+p 文档维护表：
+table
+# | 人员 | 内容 | 时间
+1 | 王龙 | 创建文档 | 2015年4月14日
+2 | 王龙 | 添加View层文档 | 2015年4月17日
+
+h1 Facades
+p 门店模式提供了快捷的静态类接口，方便开发者使用不同核心功能的模块。
+p 位于 application/core/facades 目录里存放着各类 Facade 类定义文件。
+p Facade 的基类一般继承自 PDK\Pattern\Facade 抽象类的实现，因此本系统大多数常用的核心门店类将直接使用PDK自身的类包，这部分后续可详见PDK文档。
+
+h1 View
+p 视图层（View Facade）提供了简单的模板引擎，该引擎为编译型，
+p 需设置application/cache/views目录为可写权限并确保该目录存在（若不存在请手动创建）
+p 视图在一次编译后缓存至该目录，这将提高下一次请求的性能，默认开启的debug模式会使修改后的视图重新编译，因此这将不影响你连续创作。
+
+h2 模板标签的使用
+p 输出一个变量值
+p #{$name}#
+p 输出一个数组值
+p #{$index[0]}#
+p 输出一个哈希值
+p #{$hash['name']}#
+p 输出一个对象值
+p #{$object->name}#
+p 输出一个带有默认值的变量（若变量不存在或为空则显示竖线后面的内容）
+p #{$title|首页}#
+p 判断标签
+p #{if $age > 18}#
+p #{else}#
+p #{/if}#
+p 循环标签
+p #{loop $images $img}#
+p #{$img->src}#
+p #{/loop}#
+p 输出复杂内容
+p #{=strtoupper($word)}#
+p #{=date('Y-m-d', strtotime($time))}#
+p 或直接使用原生PHP语法
+p #&lt;?php echo strtoupper($word); ?&gt;#
+p #&lt;?php echo date('Y-m-d', strtotime($time)); ?&gt;#
+
+h2 通用常量与功能标签
+p 取得当前域名下的根地址
+p #{base_url}#
+p 视图内嵌入其它视图文件（无需后缀名）
+p #{template common/header}#
+p 视图布局占位符（与layout模式搭配）
+p #{yield}#
+
+h2 变量标签注册及页面渲染
+p 通过key/value形式逐个注册变量
+<<
+$name = 'Jason';
+View::assign('name', $name);
+View::assign('age', 18);
+>>
+
+p 或通过数组、对象打包的方式
+<<
+$data['name'] = 'Jason';
+$data['age'] = 18;
+View::assign($data);
+>>
+
+p 编译及渲染视图文件
+<<
+View::render('/view/to/path');
+>>

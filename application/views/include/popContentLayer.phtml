@@ -1,0 +1,30 @@
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4 class="modal-title pull-left" id="myModalLabel">说明</h4>
+          </div>
+          <div class="col-sm-6 text-right">
+            <button id="delete-circle" type="button" class="btn btn-danger" data-dismiss="modal">删除点</button>
+            <button id="change-data" type="button" class="btn btn-success">确认修改</button>
+            <button type="button" class="btn btn-warning" data-dismiss="modal">取消编辑</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body" id="template-tab-content-container">
+      </div>
+      <div class="modal-footer">
+ <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        <a href="/v/his/index?map_page_sub_point_id=1">查看历史</a>
+<?php if($modeStatus==1){?>
+         <hr>
+        <span class="glyphicon  glyphicon-pushpin">钉</span><input type="checkbox">
+        <button id="change-data" type="button" class="btn btn-primary">保存</button>
+<?php }?>
+      </div>
+    </div>
+  </div>
+</div>

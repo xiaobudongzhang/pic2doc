@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PicforDoc</title>
+  {=css_web("vendor")}
+  {=css_web("index")}
+</head>
+<body>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">页面</h3>
+    </div>
+    <div class="panel-body">
+        {loop $list $val}
+        <a href="/v/Home/page_sub?map_project_id={$val['id']}">{$val['page_name']}</a>
+        <hr>
+        {/loop}
+    </div>
+</div>
+<!-- <div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">配置</h3>
+    </div>
+    <div class="panel-body">
+          <a href="/dd/index/index">消息</a>
+    </div> -->
+</div>
+</body>
+</html>
