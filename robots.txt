@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:/data/
+Disallow:/common/house/
+Disallow:/h5/sale/

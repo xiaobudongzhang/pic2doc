@@ -1,0 +1,5 @@
+application/logs/*
+node_modules
+map.json
+max.txt
+application/cache/views/*
