@@ -40,54 +40,7 @@ INSERT INTO `php_session` VALUES ('r3vvisbp1p4jnt8ps3qn3fno76', 0x74696D65737461
 INSERT INTO `php_session` VALUES ('sm3ra5r6une8sh6g7ec1tj13h4', 0x74696D657374616D707C733A333A22646464223B, '2016-09-25 01:31:31');
 INSERT INTO `php_session` VALUES ('turjuoqq9n5fds5ihtfl5vldr6', 0x74696D657374616D707C733A333A22646464223B, '2016-09-25 01:35:53');
 
--- ----------------------------
--- Table structure for poll_vote
--- ----------------------------
-DROP TABLE IF EXISTS `poll_vote`;
-CREATE TABLE `poll_vote` (
-  `poll_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `candidate_id` int(10) unsigned NOT NULL,
-  `vote_count` int(10) unsigned DEFAULT NULL,
-  PRIMARY KEY (`poll_id`,`candidate_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
--- ----------------------------
--- Records of poll_vote
--- ----------------------------
-INSERT INTO `poll_vote` VALUES ('14', '3', '3');
-
--- ----------------------------
--- Table structure for poll_vote_like
--- ----------------------------
-DROP TABLE IF EXISTS `poll_vote_like`;
-CREATE TABLE `poll_vote_like` (
-  `poll_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `candidate_id` int(10) unsigned NOT NULL,
-  `vote_count` int(10) unsigned DEFAULT NULL,
-  PRIMARY KEY (`poll_id`,`candidate_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Records of poll_vote_like
--- ----------------------------
-
--- ----------------------------
--- Table structure for t
--- ----------------------------
-DROP TABLE IF EXISTS `t`;
-CREATE TABLE `t` (
-  `i` longblob NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Records of t
--- ----------------------------
-INSERT INTO `t` VALUES (0x31);
-INSERT INTO `t` VALUES (0x32);
-
--- ----------------------------
--- Table structure for visual_map_page_sub
--- ----------------------------
 DROP TABLE IF EXISTS `visual_map_page_sub`;
 CREATE TABLE `visual_map_page_sub` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,

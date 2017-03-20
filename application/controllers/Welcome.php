@@ -25,7 +25,7 @@ class Welcome extends CI_Controller {
 
 		View::assign('list',$list);
 		View::render('project/page_list');
-
+        
 	}
 
 	public function phpinfo()
