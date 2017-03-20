@@ -20,6 +20,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+        $req = Requests::get('http://www.baidu.com');
+        var_dump($req);
+        die();
 		$id=(int)Input::get("project_id",1);
 		$list=\ProjectModel::getList($id);
 
