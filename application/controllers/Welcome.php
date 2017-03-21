@@ -20,12 +20,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-        \Txy::test();
-        die;
-        $req = Requests::get('http://www.baidu.com');
-        var_dump($req);
-        die();
-		$id=(int)Input::get("project_id",1);
+        //$x=new \Toolkit\TemplateManager();
+        //var_dump($x);die;
+		$id=(int)$this->input->get("project_id",1);
 		$list=\ProjectModel::getList($id);
 
 		View::assign('list',$list);

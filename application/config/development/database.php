@@ -67,10 +67,10 @@ $query_builder = TRUE;
 
 $db['test'] = array(
 		'dsn'	=> '',
-		'hostname' => '10.12.21.120',
-		'username' => '',
-		'password' => '',
-		'database' => 'test',
+		'hostname' => '127.0.0.1',
+		'username' => 'root',
+		'password' => 'mysql',
+		'database' => 'pic2doc',
 		'dbdriver' => 'mysqli',
 		'dbprefix' => '',
 		'pconnect' => FALSE,
