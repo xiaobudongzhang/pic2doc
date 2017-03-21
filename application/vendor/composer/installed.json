@@ -1,5 +1,32 @@
 [
     {
+        "name": "xiaobudongzhang/pic2doc_view",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/xiaobudongzhang/pic2doc_view.git",
+            "reference": "5e8f41ba390a986cc0584aad6fddb5b4c28ac250"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/xiaobudongzhang/pic2doc_view/5e8f41ba390a986cc0584aad6fddb5b4c28ac250.zip",
+            "reference": "5e8f41ba390a986cc0584aad6fddb5b4c28ac250",
+            "shasum": ""
+        },
+        "time": "2017-03-21T07:40:43+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "xiaobudongzhang",
+                "email": "xiaobudongzhang@gmail.com"
+            }
+        ],
+        "description": "php_view"
+    },
+    {
         "name": "rmccue/requests",
         "version": "v1.7.0",
         "version_normalized": "1.7.0.0",

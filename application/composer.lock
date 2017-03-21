@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "59c06934e4896ac5416389ba960e4220",
+    "content-hash": "2ae5c38fa47960a270362f6490e83938",
     "packages": [
         {
             "name": "rmccue/requests",
@@ -54,12 +54,39 @@
                 "sockets"
             ],
             "time": "2016-10-13T00:11:37+00:00"
+        },
+        {
+            "name": "xiaobudongzhang/pic2doc_view",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xiaobudongzhang/pic2doc_view.git",
+                "reference": "5e8f41ba390a986cc0584aad6fddb5b4c28ac250"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/xiaobudongzhang/pic2doc_view/5e8f41ba390a986cc0584aad6fddb5b4c28ac250.zip",
+                "reference": "5e8f41ba390a986cc0584aad6fddb5b4c28ac250",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "xiaobudongzhang",
+                    "email": "xiaobudongzhang@gmail.com"
+                }
+            ],
+            "description": "php_view",
+            "time": "2017-03-21 07:40:43"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "xiaobudongzhang/pic2doc_view": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
