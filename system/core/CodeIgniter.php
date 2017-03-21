@@ -165,7 +165,6 @@ if ( ! is_php('5.4'))
  *  Should we use a Composer autoloader?
  * ------------------------------------------------------
  */
-
 	if ($composer_autoload = config_item('composer_autoload'))
 	{
 		if ($composer_autoload === TRUE)

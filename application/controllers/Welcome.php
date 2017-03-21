@@ -20,6 +20,8 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+        \Txy::test();
+        die;
         $req = Requests::get('http://www.baidu.com');
         var_dump($req);
         die();

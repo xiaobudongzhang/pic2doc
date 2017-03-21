@@ -1,5 +1,5 @@
 <?php
-
+die("curl");
 defined('BASEPATH') OR exit('No direct script access allowed');
 /**
  * Created by PhpStorm.

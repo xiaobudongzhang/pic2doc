@@ -299,7 +299,7 @@ if ( ! function_exists('config_item'))
 			// references cannot be directly assigned to static variables, so we use an array
 			$_config[0] =& get_config();
 		}
-        
+
 		return isset($_config[0][$item]) ? $_config[0][$item] : NULL;
 	}
 }

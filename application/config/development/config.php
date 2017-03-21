@@ -497,4 +497,4 @@ $config['proxy_ips'] = '';
 |--------------------------------------------------------------------------
 |
 */
-$config['autoload_paths'][] = APPPATH.'tests';
+$config['autoload_paths'][] = '';
