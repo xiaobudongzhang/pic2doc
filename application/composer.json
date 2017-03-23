@@ -1,6 +1,7 @@
 {
   "require": {
     "rmccue/requests": ">=1.6",
-    "xiaobudongzhang/pic2doc_view": "^2.2"
+    "fxp/composer-asset-plugin": "^1.3",
+    "xiaobudongzhang/pic2doc_template": "^1.0"
   }
 }

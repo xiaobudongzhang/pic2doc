@@ -6,9 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Toolkit\\Compiler' => $vendorDir . '/xiaobudongzhang/pic2doc_view/src/Compiler.php',
-    'Toolkit\\Rules\\Classical' => $vendorDir . '/xiaobudongzhang/pic2doc_view/src/Rules/Classical.php',
-    'Toolkit\\Rules\\Rule' => $vendorDir . '/xiaobudongzhang/pic2doc_view/src/Rules/Rule.php',
-    'Toolkit\\Template' => $vendorDir . '/xiaobudongzhang/pic2doc_view/src/Template.php',
-    'Toolkit\\TemplateManager' => $vendorDir . '/xiaobudongzhang/pic2doc_view/src/TemplateManager.php',
+    'PHPTemplate\\Compiler' => $vendorDir . '/xiaobudongzhang/pic2doc_template/src/Compiler.php',
+    'PHPTemplate\\Rules\\Classical' => $vendorDir . '/xiaobudongzhang/pic2doc_template/src/Rules/Classical.php',
+    'PHPTemplate\\Rules\\Rule' => $vendorDir . '/xiaobudongzhang/pic2doc_template/src/Rules/Rule.php',
+    'PHPTemplate\\Template' => $vendorDir . '/xiaobudongzhang/pic2doc_template/src/Template.php',
+    'PHPTemplate\\TemplateManager' => $vendorDir . '/xiaobudongzhang/pic2doc_template/src/TemplateManager.php',
 );

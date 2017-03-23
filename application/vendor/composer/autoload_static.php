@@ -4,8 +4,22 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitca85940e918ac1f339bda7853a273181
+class ComposerStaticInit0d0d4c5ba461058633686426aac32eb5
 {
+    public static $prefixLengthsPsr4 = array (
+        'F' => 
+        array (
+            'Fxp\\Composer\\AssetPlugin\\' => 25,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Fxp\\Composer\\AssetPlugin\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fxp/composer-asset-plugin',
+        ),
+    );
+
     public static $prefixesPsr0 = array (
         'R' => 
         array (
@@ -17,18 +31,20 @@ class ComposerStaticInitca85940e918ac1f339bda7853a273181
     );
 
     public static $classMap = array (
-        'Toolkit\\Compiler' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_view/src/Compiler.php',
-        'Toolkit\\Rules\\Classical' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_view/src/Rules/Classical.php',
-        'Toolkit\\Rules\\Rule' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_view/src/Rules/Rule.php',
-        'Toolkit\\Template' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_view/src/Template.php',
-        'Toolkit\\TemplateManager' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_view/src/TemplateManager.php',
+        'PHPTemplate\\Compiler' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_template/src/Compiler.php',
+        'PHPTemplate\\Rules\\Classical' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_template/src/Rules/Classical.php',
+        'PHPTemplate\\Rules\\Rule' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_template/src/Rules/Rule.php',
+        'PHPTemplate\\Template' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_template/src/Template.php',
+        'PHPTemplate\\TemplateManager' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_template/src/TemplateManager.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixesPsr0 = ComposerStaticInitca85940e918ac1f339bda7853a273181::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitca85940e918ac1f339bda7853a273181::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit0d0d4c5ba461058633686426aac32eb5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit0d0d4c5ba461058633686426aac32eb5::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit0d0d4c5ba461058633686426aac32eb5::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit0d0d4c5ba461058633686426aac32eb5::$classMap;
 
         }, null, ClassLoader::class);
     }

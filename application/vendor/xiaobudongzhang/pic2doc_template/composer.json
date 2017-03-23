@@ -1,0 +1,15 @@
+{
+    "name": "xiaobudongzhang/pic2doc_view",
+    "description": "php_view",
+    "type": "library",
+    "authors": [
+        {
+            "name": "xiaobudongzhang",
+            "email": "xiaobudongzhang@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
