@@ -1,5 +1,4 @@
 <?php
-//项目
 class PageModel extends BaseModel {
 		/**
 		*项目下列表
@@ -11,7 +10,7 @@ class PageModel extends BaseModel {
 			return $res;
 		}
 
-				public static function getOne($id){
+	   public static function getOne($id){
 			$db = self::db ( 'test' );
 			$db->where('id',$id);
 			$res = $db->get ( 'visual_map_page_sub' )->row_array ();

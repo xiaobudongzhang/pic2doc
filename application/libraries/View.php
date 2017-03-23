@@ -22,11 +22,11 @@ class View
     {
         if ( ! isset(self::$instance))
         {
-            $rule = new PHPTemplate\Rules\Classical;
+            $rule = new \Toolkit\Rules\Classical;
             $rule->add("/^base_url$/", "<?php echo base_url(); ?>");
             $rule->add("/^auto_url:(.+?)$/", '<?php echo auto_url("$1"); ?>');
 
-            $view = new PHPTemplate\Template(new PHPTemplate\Compiler($rule));
+            $view = new \Toolkit\Template(new Toolkit\Compiler($rule));
             $view->setViewDirectory(APPPATH. 'views');
             $view->setCompiledDirectory(APPPATH . 'cache/views');
             $view->setTemplateEnabled(true);

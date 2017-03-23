@@ -1,6 +1,6 @@
 {
   "require": {
     "rmccue/requests": ">=1.6",
-     "xiaobudongzhang/pic2doc_view":"dev-master"
+    "xiaobudongzhang/pic2doc_view": "^2.2"
   }
 }

@@ -1,8 +1,8 @@
 <?php
-class Home extends SimpleBaseController {
+class Home extends CI_Controller {
 
   public function project_sub() {
-  	$id=(int)Input::get("project_id",1);
+  	$id=(int)$this->input->get("project_id",1);
   	$list=\ProjectModel::getList($id);
 
   	View::assign('list',$list);
@@ -10,7 +10,7 @@ class Home extends SimpleBaseController {
   }
 
   public function page_sub() {
-  	$map_project_id=(int)Input::get("map_project_id",1);
+  	$map_project_id=(int)$this->input->get("map_project_id",1);
 
   	$list=\PageModel::getList($map_project_id);
 

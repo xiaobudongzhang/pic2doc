@@ -20,9 +20,10 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-        //$x=new \Toolkit\TemplateManager();
-        //var_dump($x);die;
+       
+       
 		$id=(int)$this->input->get("project_id",1);
+        
 		$list=\ProjectModel::getList($id);
 
 		View::assign('list',$list);

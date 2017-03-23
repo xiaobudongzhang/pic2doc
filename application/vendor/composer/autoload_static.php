@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitac9d87075bedffc618378dc48b97581e
+class ComposerStaticInitca85940e918ac1f339bda7853a273181
 {
     public static $prefixesPsr0 = array (
         'R' => 
@@ -16,10 +16,19 @@ class ComposerStaticInitac9d87075bedffc618378dc48b97581e
         ),
     );
 
+    public static $classMap = array (
+        'Toolkit\\Compiler' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_view/src/Compiler.php',
+        'Toolkit\\Rules\\Classical' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_view/src/Rules/Classical.php',
+        'Toolkit\\Rules\\Rule' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_view/src/Rules/Rule.php',
+        'Toolkit\\Template' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_view/src/Template.php',
+        'Toolkit\\TemplateManager' => __DIR__ . '/..' . '/xiaobudongzhang/pic2doc_view/src/TemplateManager.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixesPsr0 = ComposerStaticInitac9d87075bedffc618378dc48b97581e::$prefixesPsr0;
+            $loader->prefixesPsr0 = ComposerStaticInitca85940e918ac1f339bda7853a273181::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitca85940e918ac1f339bda7853a273181::$classMap;
 
         }, null, ClassLoader::class);
     }
