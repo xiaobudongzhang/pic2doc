@@ -1,4 +1,9 @@
-运行(php S 127.0.0.1:8899 t .)
+# 运行
+1. 在public下运行php -S {ip:port} -t ./
+2. 在pic2doc_front下运行 npm run dev
+3. 访问http://{ip:port}/v/home/project_sub?project_id=1
+
+
  
 # 坐标
  
