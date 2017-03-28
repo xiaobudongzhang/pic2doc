@@ -60,7 +60,7 @@ $autoload['packages'] = array(APPPATH.'third_party');
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
 
-$autoload['libraries'] = array('Curl','View');
+$autoload['libraries'] = array('Curl','View','Response');
 
 
 /*
@@ -137,4 +137,4 @@ $autoload['language'] = array('error');
 |	$autoload['model'] = array('first_model' => 'first');
 */
 
-$autoload['model'] = array('BaseModel','ProjectModel','PageModel');
+$autoload['model'] = array('BaseModel','ProjectModel','PageModel','PointModel','ContentModel');

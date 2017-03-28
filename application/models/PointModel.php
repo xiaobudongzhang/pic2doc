@@ -13,15 +13,14 @@ class PointModel extends BaseModel {
 		
 		$mapIds=array_column($res,'id');
 		$allContent=$db->where_in('map_page_sub_point_id',$mapIds)->get('visual_map_point')->result_array();
-		$allContent=tran_key($allContent,'map_page_sub_point_id',false,false);
 
-		$allContentTran=[];
-		foreach($allContent as $id=>$content){
-			foreach($content as $cc){
-						$allContentTran[$id][$cc['type_name']]=$cc;	
-			}
-		}
-
+        
+        $allContentTran=[];
+        foreach($allContent as $id=>$cc){
+            $allContentTran[$cc['map_page_sub_point_id']][$cc['type_name']]=$cc;
+        }
+        
+        
 		$initContent=[];
 		$initContent['cp']=
 			[

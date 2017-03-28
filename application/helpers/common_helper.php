@@ -8,3 +8,11 @@ if (!function_exists('dump')) {
         echo '</pre>';
     }
 }
+
+function getFormatOut(){
+    return [
+        'code'=>'00000',
+        'data'=>[],
+        'msg'=>'ok'
+    ];
+}

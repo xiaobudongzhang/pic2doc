@@ -14,6 +14,7 @@ class PageModel extends BaseModel {
 			$db = self::db ( 'test' );
 			$db->where('id',$id);
 			$res = $db->get ( 'visual_map_page_sub' )->row_array ();
+            
 			return $res;
 		}
 }

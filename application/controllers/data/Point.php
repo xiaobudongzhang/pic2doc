@@ -1,17 +1,17 @@
 <?php
-class Point extends SimpleBaseController {
+class Point extends CI_Controller {
 	public function getList() {
 		$out = getFormatOut ();
-		$out ['data'] = PointModel::getlist ( (int)Input::get ( 'map_page_sub_id' ) );
+		$out ['data'] = PointModel::getlist ( (int)$this->input->get ( 'map_page_sub_id' ) );
 		Response::json ( $out );
 	}
 
 	public function insert() {
 		$out = getFormatOut ();
 		
-		$map_page_sub_id = Input::post ( 'map_page_sub_id' );
-		$pointx = Input::post ( 'point_x' );
-		$pointy = Input::post ( 'point_y' );
+		$map_page_sub_id = $this->input->post ( 'map_page_sub_id' );
+		$pointx = $this->input->post  ( 'point_x' );
+		$pointy = $this->input->post  ( 'point_y' );
 		
 		if (! $map_page_sub_id  || ! $pointx || ! $pointy) {
 			$out ['code'] = ERROR_CODE_LESS_CAN;
@@ -31,7 +31,7 @@ class Point extends SimpleBaseController {
 	public function delete() {
 		$out = getFormatOut ();
 		
-		$id = Input::post ( 'id' );
+		$id = $this->input->post ( 'id' );
 		
 		if (! $id) {
 			$out ['code'] = ERROR_CODE_LESS_CAN;
@@ -51,8 +51,8 @@ class Point extends SimpleBaseController {
 		public function updateTitle() {
 		$out = getFormatOut ();
 		
-		$id = Input::post ( 'id' );
-		$title = Input::post ( 'title' );
+		$id =  $this->input->post ( 'id' );
+		$title =  $this->input->post ( 'title' );
 
 		
 		if (! $id  || ! $title ) {
@@ -69,4 +69,5 @@ class Point extends SimpleBaseController {
 		$out ['data'] = $req;
 		Response::json ( $out );
 	}
+    
 }

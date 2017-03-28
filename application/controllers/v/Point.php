@@ -4,6 +4,7 @@ class Point extends CI_Controller {
   public function index() {
   	$map_page_sub_id=(int)$this->input->get('map_page_sub_id');
   	$row=PageModel::getOne($map_page_sub_id);
+    
   	$modeStatus=(int)$this->input->get('mode_status');
 
   	View::assign('map_page_sub_id',$map_page_sub_id);

@@ -1,5 +1,5 @@
 <?php
-class Pic extends SimpleBaseController {
+class Pic extends CI_Controller {
 	
 	public function getOne(){
 		$out = getFormatOut ();
