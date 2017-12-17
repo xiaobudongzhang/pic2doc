@@ -137,4 +137,4 @@ $autoload['language'] = array('error');
 |	$autoload['model'] = array('first_model' => 'first');
 */
 
-$autoload['model'] = array('BaseModel','ProjectModel','PageModel','PointModel','ContentModel');
+$autoload['model'] = array('BaseModel','ProjectModel','PageModel','PointModel','ContentModel','HisModel');

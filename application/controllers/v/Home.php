@@ -5,7 +5,6 @@ class Home extends CI_Controller {
   	$id=(int)$this->input->get("project_id",1);
   	$list=\ProjectModel::getList($id);
 
-    
 
   	View::assign('list',$list);
     View::render('project/page_list');
